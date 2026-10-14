@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio d’Ephraïm AWAGA, élève ingénieur à Centrale Casablanca. Cybersécurité, développement et projets : RiskSim, CardioAI et ForestIA.">
+  <meta name="theme-color" content="#0b2d4a">
+  <title>Ephraïm AWAGA — Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="identity" href="#contenu" aria-label="Ephraïm AWAGA, accueil"><span class="monogram">EA</span><span class="name">Ephraïm AWAGA</span></a>
+      <nav aria-label="Navigation principale"><a href="#projets">Projets</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Construire des outils utiles.<br>Comprendre les systèmes.</h1>
+        <p class="intro">Élève ingénieur à Centrale Casablanca, je recherche un stage de deuxième année, avec une priorité pour la cybersécurité.</p>
+        <p class="hero-note">Mes projets m’ont amené à développer des applications, organiser des données et vérifier leur fonctionnement. Je souhaite approfondir ces bases au sein d’une équipe technique.</p>
+        <div class="actions"><a class="button primary" href="#projets">Découvrir mes projets</a><a class="button" href="#contact">Me contacter</a></div>
+      </div>
+      <figure class="hero-figure"><a href="risksim.webp" target="_blank" rel="noopener" aria-label="Agrandir la capture de RiskSim"><img src="risksim.webp" width="1908" height="962" alt="RiskSim : synthèse d’une simulation avec percentiles et comparaison à une référence" fetchpriority="high"></a><figcaption>RiskSim — simulation de risques · exemple de démonstration</figcaption></figure>
+    </section>
+    <section class="projects container" id="projets" aria-labelledby="projects-title">
+      <h2 id="projects-title">Trois projets, des problèmes concrets.</h2>
+      <article class="project" id="risksim">
+        <div class="project-copy"><span class="number" aria-hidden="true">01</span><div>
+          <h3>RiskSim</h3>
+          <p class="description">Simulation Monte-Carlo des coûts et délais. Développement en binôme chez Choubel Consulting.</p>
+          <h4>Ma contribution</h4><p>Participation au développement de l’application ; propositions pour faciliter la correction des hypothèses, regrouper les réglages et organiser la lecture des résultats.</p>
+          <details><summary>Voir le projet <span aria-hidden="true">→</span></summary><div class="detail-content">
+            <h4>Le besoin</h4><p>Permettre à un consultant de préparer un registre de risques, lancer une simulation et comprendre les résultats sans modifier le code.</p>
+            <h4>La réalisation du binôme</h4><p>Moteur Python, interface React et API FastAPI locale. Import Excel, stockage local, graphiques et exports Excel/ZIP. Version portable sous Windows.</p>
+            <h4>Une difficulté concrète</h4><p>Le démarrage sur un ordinateur sans environnement de développement a nécessité des essais sur une machine virtuelle Windows 11 et des corrections de packaging.</p>
+            <p class="status">Essais sur données synthétiques. La validation métier sur un registre client réel reste à réaliser.</p>
+            <p class="tech">Python · React · FastAPI · Excel · Git · Tests automatisés</p>
+            <a class="text-link" href="https://github.com/danielawaga/Monte-Carlo-Simulator" target="_blank" rel="noopener noreferrer">Code et documentation sur GitHub ↗</a>
+          </div></details>
+        </div></div>
+        <figure><a href="risksim.webp" target="_blank" rel="noopener" aria-label="Agrandir les résultats RiskSim"><img src="risksim.webp" width="1908" height="962" loading="lazy" alt="Écran de résultats de RiskSim, sur un cas synthétique"></a><figcaption>Du registre aux indicateurs de décision.</figcaption></figure>
+      </article>
+      <article class="project" id="cardioai">
+        <div class="project-copy"><span class="number" aria-hidden="true">02</span><div>
+          <h3>CardioAI</h3><p class="description">Prototype académique de prédiction. Un projet collectif associant données, apprentissage automatique et interface web.</p>
+          <h4>Ma contribution</h4><p>Développement de l’API FastAPI : validation des données, chargement du modèle et traitement des erreurs. Participation au développement de l’interface.</p>
+          <details><summary>Voir le projet <span aria-hidden="true">→</span></summary><div class="detail-content">
+            <h4>Le besoin</h4><p>Rendre les résultats d’un modèle accessibles depuis une interface, avec des données structurées et des réponses compréhensibles.</p>
+            <h4>Ce que j’ai développé</h4><p>Une API avec des routes de prédiction, des schémas Pydantic pour contrôler les champs reçus et des réponses adaptées aux erreurs ou à l’absence du modèle.</p>
+            <h4>Le travail collectif</h4><p>Le projet réunit préparation des données, entraînement et évaluation du modèle, explicabilité et développement web. Mon rôle se concentrait sur l’API et l’interface.</p>
+            <p class="status">Prototype pédagogique ; aucune validation clinique revendiquée.</p>
+            <p class="tech">Python · FastAPI · Pydantic · Interface web · Travail en équipe</p>
+            <div class="detail-links"><a class="text-link" href="https://github.com/Appolinairee/heart-failure-predictor" target="_blank" rel="noopener noreferrer">Dépôt du projet ↗</a><a class="text-link" href="https://github.com/Appolinairee/heart-failure-predictor/commit/54847f6710431d005fcddbaa4ec7902ac2d01879" target="_blank" rel="noopener noreferrer">Contribution à l’API ↗</a></div>
+          </div></details>
+        </div></div>
+        <figure><a href="cardioai.webp" target="_blank" rel="noopener" aria-label="Agrandir l’interface de CardioAI"><img src="cardioai.webp" loading="lazy" alt="Capture du tableau de bord du projet académique CardioAI"></a><figcaption>Une interface pour explorer les résultats du modèle.</figcaption></figure>
+      </article>
+      <article class="project" id="forestia">
+        <div class="project-copy"><span class="number" aria-hidden="true">03</span><div>
+          <h3>ForestIA</h3><p class="description">Vision par ordinateur et prototype de surveillance. Projet Learning by Doing, réalisé en équipe.</p>
+          <h4>Ma contribution</h4><p>Participation au projet collectif associant détection de feux et fumées, développement logiciel et intégration matérielle.</p>
+          <details><summary>Voir le projet <span aria-hidden="true">→</span></summary><div class="detail-content">
+            <h4>Du concept au prototype</h4><p>Le concept initial de drone a évolué vers un prototype de déplacement sur deux axes, adapté aux ressources de l’équipe, avec une caméra et un Raspberry Pi.</p>
+            <h4>Les éléments réalisés par l’équipe</h4><p>Entraînements YOLO pour la détection de feux et fumées, interface React de supervision et développement d’une communication WebSocket. Des photos d’assemblage et des résultats d’entraînement documentent l’avancement.</p>
+            <h4>Un apprentissage d’ingénierie</h4><p>Adapter l’ambition initiale aux contraintes de matériel et de budget, puis distinguer les composants testés séparément du système complètement intégré.</p>
+            <p class="status">Prototype en cours d’intégration. La boucle complète de détection et de commande matérielle reste à valider.</p>
+            <p class="tech">Python · YOLO · React · WebSocket · Raspberry Pi · Prototypage</p>
+            <p>Je peux présenter la démarche et les éléments du prototype lors d’un échange.</p>
+          </div></details>
+        </div></div>
+        <figure><a href="forestia.webp" target="_blank" rel="noopener" aria-label="Agrandir la photo du prototype ForestIA"><img class="prototype" src="forestia.webp" width="960" height="1280" loading="lazy" alt="Prototype ForestIA en cours d’assemblage : cadre en bois, moteurs et guidage sur deux axes"></a><figcaption>Photo du prototype pendant l’assemblage.</figcaption></figure>
+      </article>
+    </section>
+    <section class="cyber" id="parcours" aria-labelledby="cyber-title"><div class="container">
+      <h2 id="cyber-title">Un parcours vers la cybersécurité.</h2>
+      <div class="cyber-columns"><div><h3>Pre Security (SEC0) — TryHackMe</h3><p>Une première certification pour construire mes bases : fonctionnement des systèmes, réseaux, web et notions introductives de sécurité.</p><p>Je poursuis mon apprentissage pour développer progressivement une pratique plus approfondie de la cybersécurité.</p></div>
+      <div><h3>Détection d’intrusions &amp; Focal Loss</h3><p>Dans mon projet scientifique actuel, j’étudie l’influence de la fonction de perte sur la détection d’intrusions réseau, notamment les classes d’attaques minoritaires et les fausses alertes.</p><p>Projet en cours, avec un travail de compréhension des fondements théoriques.</p></div></div>
+    </div></section>
+    <section class="education container" aria-labelledby="education-title"><h2 id="education-title">Une formation scientifique, des applications concrètes.</h2><div class="education-columns"><div><h3>École Centrale Casablanca</h3><p>Cycle ingénieur généraliste · deuxième année</p></div><div><h3>IMSP, Bénin</h3><p>Classes préparatoires MPSI, puis Licence spéciale CPGE en mathématiques.</p></div></div></section>
+    <section class="contact container" id="contact" aria-labelledby="contact-title"><div><h2 id="contact-title">Parlons de votre prochain projet.</h2><p>Je suis ouvert aux stages en cybersécurité, en développement et en data. Échangeons sur les missions de votre équipe.</p></div><div class="contact-actions"><a class="button primary" href="mailto:ephraimdanieljesuskpon.awaga@centrale-casablanca.ma">Me contacter par email</a><a class="button" href="https://github.com/danielawaga" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="button" href="https://www.linkedin.com/in/daniel-awaga/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></section>
+  </main>
+  <footer class="container footer"><a class="identity" href="#contenu"><span class="monogram">EA</span><span>Ephraïm AWAGA</span></a><span>Élève ingénieur · Centrale Casablanca</span><a href="#projets">Retour aux projets ↑</a></footer>
+</body>
+</html>
